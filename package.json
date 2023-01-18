@@ -1,10 +1,17 @@
 {
   "name": "sol-bot",
   "version": "1.0.0",
+  "description": "sol-bot is a simple Discord bot, written in Discordie.",
   "author": "Chloe Arciniega <solely@riseup.net>",
+  "main": "src/index.js",
   "license": "zlib",
   "private": true,
-  "main": "src/index.js",
+  "scripts": {
+    "format:prettier": "prettier --w --plugin-search-dir=. .",
+    "lint:eslint": "eslint --fix src/**/*.js",
+    "start": "node src/index",
+    "test": "eslint src/**/*.js && prettier --c ."
+  },
   "packageManager": "yarn@3.3.1",
   "dependencies": {
     "@types/eslint": "^8.4.10",

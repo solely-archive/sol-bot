@@ -1,7 +1,7 @@
 const Discordie = require('discordie');
 const client = new Discordie();
 
-const prefix = 'p-';
+const prefix = 's-';
 
 client.User.setGame(`coding w/ solely | ${prefix}help`);
 client.User.setStatus('dnd');
@@ -53,7 +53,7 @@ client.Dispatcher.on('MESSAGE_CREATE', (e) => {
   if (e.message.content == prefix + 'about') {
     e.message.channel.sendMessage(
       e.message.author.nickMention +
-        ' , `This bot was made by ` <@!219826813554130944> ` also , special thanks to ` <@!244509121838186497> ` for these bot commands `:heart:'
+        ' , `This bot was made by ` <@!312145496179474434> ` also , special thanks to ` <@!244509121838186497> ` for these bot commands `:heart:'
     );
   }
   if (e.message.content == prefix + 'myid') {
