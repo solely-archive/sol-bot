@@ -4,6 +4,7 @@
   "author": "Chloe Arciniega <solely@riseup.net>",
   "license": "zlib",
   "private": true,
+  "main": "src/index.js",
   "packageManager": "yarn@3.3.1",
   "dependencies": {
     "@types/eslint": "^8.4.10",
